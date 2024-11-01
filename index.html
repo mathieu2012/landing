@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DTDLBStore - Vente de Montres</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+<body>
+  <!-- En-tête -->
+  <header>
+    <div class="logo">DTLB Store</div>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Nos Montres</a></li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Contact</a></li>
+        <li id="text-cart">Mon panier</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon" id="cart-icon">
+      <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <!-- Section principale -->
+  <section class="hero">
+    <h1>Découvrez notre collection de montres</h1>
+    <p>Style, précision, et innovation pour tous les goûts</p>
+    <a href="#products" class="cta">Explorer les montres</a>
+  </section>
+
+  <!-- Section des produits -->
+  <section id="products" class="products">
+    <h2>Nos Montres</h2>
+    <div class="product-grid">
+      <div class="product-card" data-name="Montre Classique" data-price="150">
+        <img src="img/montre-classique.png" alt="Montre Classique">
+        <h3>Montre Classique</h3>
+        <p class="price">150€</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product-card" data-name="Montre Sportive" data-price="250">
+        <img src="img/montre-sportive.png" alt="Montre Sportive">
+        <h3>Montre Sportive</h3>
+        <p class="price">250€</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product-card" data-name="Montre de Luxe" data-price="500">
+        <img src="img/montre-luxe (2).png" alt="Montre de Luxe" id="montre-luxe">
+        <div class="montre-de-luxe">
+        <h3>Montre de Luxe</h3>
+        <p class="price">500€</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Panier (Overlay) -->
+  <section class="cart-overlay" id="cart-overlay">
+    <div class="cart-content">
+      <h2>Votre Panier</h2>
+      <div id="cart-items"></div>
+      <p>Total : <span id="cart-total">0€</span></p>
+      <button id="close-cart">Fermer</button>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>© 2024 DTLB Store. Tous droits réservés.</p>
+    <div class="socials">
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
